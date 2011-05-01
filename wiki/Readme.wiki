@@ -1,11 +1,11 @@
-#summary One-sentence summary of this page.
+#to understand what this project is for and how it's done
 
-= Introduction =
+= FCC =
+FCC (Federal Communication Commission) is a US government agency. The goal of FCC is to place regulations on how communication media are used. It is required that communication products must get FCC's approval before going to market or even before field testing. Some people are interested in FCC because they can get information of new products by searching FCC's database, legally or illegally.
 
-Add your content here.
+Currently there are about 300,000 products' documents kept in FCC's database. Though some old products don't have any info kept in digital form, there are lots of stuff for products comes after 2000, including inside/outside pics and user manuals.
 
-
-= Details =
+=  =
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
