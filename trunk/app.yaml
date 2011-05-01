@@ -1,0 +1,23 @@
+application: fccextract
+version: 1
+runtime: python
+api_version: 1
+
+builtins:
+- datastore_admin: on
+
+handlers:
+- url: /admin/.*
+  script: admin.py
+  login: admin
+
+- url: /jquery.js
+  static_files: jquery.js
+  upload: jquery.js
+
+- url: /visual_test/.*
+  script: visual_test.py
+
+- url: /.*
+  script: main.py
+

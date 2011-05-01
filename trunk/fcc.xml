@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Site name="FCC">
+    <Task name="LoadCompanies" output="multi" follow="">
+        <SubTask module="fcc_company_list"
+                 method="load">
+            <filename>grantees.xml</filename>
+        </SubTask>
+    </Task>
+
+    <Task name="RetrieveFilings" output="single" follow="LoadCompanies">
+        <SubTask module="request_list"
+                 method="query_first_page"
+                 param_name="grantee_code">
+            <url>https://fjallfoss.fcc.gov/oetcf/eas/reports/GenericSearch.cfm</url>
+            <form>generic_search_form</form>
+            <show_records>50</show_records>
+        </SubTask>
+
+        <SubTask module="request_list"
+                 method="query_remains"
+                 param_name="browser">
+            <form>next_result</form>
+        </SubTask>
+
+        <SubTask module="info_extractor"
+                 method="extract"
+                 param_name="pages">
+        </SubTask>
+    </Task>
+</Site>

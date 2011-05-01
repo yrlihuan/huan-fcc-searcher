@@ -1,0 +1,9 @@
+queue:
+- name: taskexecutor
+  rate: 2/s
+  bucket_size: 50
+  max_concurrent_requests: 5
+  retry_parameters:
+    task_retry_limit: 1
+    task_age_limit: 1d
+
