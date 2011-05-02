@@ -9,3 +9,5 @@ Currently there are about 300,000 products' documents kept in FCC's database. Th
 Some interesting facts can be extracted by looking at FCC's data. Because FCC certification is required for products sold in US, it can be found which companies are most active in electronics market of US. Or companies can find out how their competitors are performing by looking at how many new devices they are registering in FCC.
 
 With FCC's data, there may be many possibilities. The scope of this project is to generate graphical reports for companies' annual filings. This will help people get a quick scan of the trend for each company, without having to deal with FCC's slowness.
+
+[http://huan-fcc-searcher.googlecode.com/svn/wiki/CrawlerArch.gif]
