@@ -31,7 +31,7 @@ The entry page displays data for several well-known companies. And user can find
 
 The project is hosted at http://fccextract.appspot.com/.
 
-*Note:* _Users in China need to set proxies to access web sites hosted on GAE. Fortunately there is one always available (www.google.cn:80)._
+*Note:* _Users in China need to set proxies to access web sites hosted on GAE.
 
 = Thanks For =
 Without these babies, the project can never be finished before deadline.
