@@ -23,7 +23,7 @@ And when a task's prerequisites are fulfilled, the task is added to a queue to w
 
 *Note:* _Because of the restrictions GAE places on free apps, only about 1/10 data is extracted from FCC's site currently._
 
-= Presentation =
+= Web UI =
 
 In order to present the FCC filings data in a way easy to comprehend, a visual column chart is desired. There are numerous chart drawing libs for web applications, of which the Visualization API from Google wins the competition for its cleanness and ease to use.
 
