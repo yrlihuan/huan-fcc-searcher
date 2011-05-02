@@ -20,17 +20,21 @@ COMPANIES_T = '<div class="result_item" ind="%s">%s</div>\n'
 JSONS_T = 'jsons[%s] = %s;\ncompany_names[%s] = "%s";\n'
 
 TEMPLATE = """
-<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" >
 <html>
   <head>
-  <style type="text/css">
-    div.result_item {padding: 12px; cursor: pointer;}
-    div.result_item:hover {background-color: #AFD775;}
-    div.search {padding: 15px;}
-    td.chart {background-color: white;}
-    td.sidebar {background-color: #95CBE9; width: 120px; padding: 5px;}
-    tr.titlebar {background-color: #024769;}
-  </style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" > 
+    <style type="text/css">
+      body {font-family: "Lucida Grande",Arial,helvetica,sans-serif;}
+      div.result_item {color: #FFFFFF; font-weight:bold; padding: 12px; cursor: pointer;}
+      div.result_item:hover {background-color: #AFD775;}
+      div.search_box {height: 77px; width: 728px; overflow: hidden; background-image:url("search_box.png")}
+      #search_button, #search_button:active {border:0 none; padding:0; cursor:pointer; height:46px; width:107px; margin-left:9px; background-position:0px 0px; background-image: url("search.png")}
+      #search_button:hover{background-position:0px 47px;}
+      td.chart {background-color: white;}
+      td.sidebar {background-color: #95CBE9; width: 120px; padding: 5px;}
+      #search_input {border: 0 none; font-size: 20px; height:28px; margin: 22px 0 0 22px; width: 570px;}
+    </style>
     
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
@@ -71,9 +75,9 @@ TEMPLATE = """
       <tr class="titlebar">
         <form>
           <td colspan="2">
-            <div class="search">
-              <input width="100" name="q" type="text" value="%(query_str)s"></input>
-              <input type="submit" value="Search"></input>
+            <div class="search_box">
+              <input id="search_input" value="%(query_str)s" name="q" />
+              <input id="search_button" value="" type="submit" />
             </div>
           </td>
         </form>
@@ -86,6 +90,13 @@ TEMPLATE = """
         </td>
         <td class="chart" width="640" height="420">
           <div id="chart_div"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <div style="text-align: center; color: rgb(118, 118, 118); font-size: 9pt;">
+                &copy; 2011 - Huan Li        
+            </div>
         </td>
       </tr>
     </table>
