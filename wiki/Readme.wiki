@@ -10,4 +10,17 @@ Some interesting facts can be extracted by looking at FCC's data. Because FCC ce
 
 With FCC's data, there may be many possibilities. The scope of this project is to generate graphical reports for companies' annual filings. This will help people get a quick scan of the trend for each company, without having to deal with FCC's slowness.
 
-[http://huan-fcc-searcher.googlecode.com/svn/wiki/CrawlerArch.gif]
+= Crawl Data =
+The FCC host a search entry at http://www.fcc.gov/oet/ea/fccid/
+
+
+[http://huan-fcc-searcher.googlecode.com/svn/wiki/CrawlerArch2.gif]
+
+= Thanks For =
+Without these babies, the project can never be finished before deadline.
+  * google app engine
+  * mechanize
+  * BeautifulSoup
+  * google visualization
+  * gviz_api
+  * jQuery
