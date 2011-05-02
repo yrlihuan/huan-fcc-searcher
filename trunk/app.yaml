@@ -15,6 +15,10 @@ handlers:
   static_files: jquery.js
   upload: jquery.js
 
+- url: /(.*).png
+  static_files: \1.png
+  upload: .*.png
+
 - url: /visual_test/.*
   script: visual_test.py
 
