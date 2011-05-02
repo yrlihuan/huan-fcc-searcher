@@ -1,13 +1,11 @@
-#to understand what this project is for and how it's done
+#what this project is for and how it's done
 
 = FCC =
-FCC (Federal Communication Commission) is a US government agency. The goal of FCC is to place regulations on how communication media are used. It is required that communication products must get FCC's approval before going to market or even before field testing. Some people are interested in FCC because they can get information of new products by searching FCC's database, legally or illegally.
+FCC (Federal Communication Commission) is a US government agency. The goal of FCC is to place regulations on how communication media are used. It is required that communication products get FCC's approval before going to market or even before field testing. Some people are interested in FCC because they can get information of new products by searching FCC's database, legally or illegally.
 
-Currently there are about 300,000 products' documents kept in FCC's database. Though some old products don't have any info kept in digital form, there are lots of stuff for products comes after 2000, including inside/outside pics and user manuals.
+Currently there are about 300,000 products' documents kept in FCC's database. Though some old products don't have any info kept in digital form, there are lots of stuff for products which come after 2000, including inside/outside pics and user manuals.
 
-=  =
+= Goal =
+Some interesting facts can be extracted by looking at FCC's data. Because FCC certification is required for products sold in US, it can be found which companies are most active in electronics market of US. Or companies can find out how their competitors are performing by looking at how many new devices they are registering in FCC.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+With FCC's data, there may be many possibilities. The scope of this project is to generate graphical reports for companies' annual filings. This will help people get a quick scan of the trend for each company, without having to deal with FCC's slowness.
